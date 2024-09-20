@@ -26,9 +26,8 @@ Estructura del Proyecto
 ├── requirements.txt        # Archivo con las dependencias y versiones
 │
 └── README.md               # Documentación del proyecto
-Descripción del Proyecto
-Este proyecto tiene como objetivo analizar cómo las variables climáticas, como temperaturas extremas y humedad, afectan la mortalidad en las diferentes provincias de España. Incluye:
 
+Incluye:
 Cálculo de valores gatillo para variables climáticas.
 Ajuste y validación de valores gatillo.
 Generación de mapas interactivos que muestran información climática y de mortalidad.
@@ -38,28 +37,27 @@ Python 3.9 o superior.
 Anaconda o Conda (recomendado para manejar dependencias geoespaciales).
 Instalación
 Usando Conda (Recomendado)
+
 Clonar el repositorio:
-
-
 git clone https://github.com/52751993k/analisis_climatico_mortalidad
+
 Navegar al directorio del proyecto:
-
 cd tu_proyecto
+
 Crear un entorno virtual:
-
-
 conda create -n mi_entorno python=3.9
+
 Activar el entorno:
-
-
 conda activate mi_entorno
+
+
 Instalar las dependencias principales con Conda:
-
-
 conda install pandas==2.1.4 numpy==1.26.4 geopandas==1.0.1 folium==0.17.0 ipywidgets==8.1.5 ipython==8.14.0 requests==2.31.0
-Instalar las dependencias adicionales con pip:
 
+
+Instalar las dependencias adicionales con pip:
 pip install fiona==1.10.1 shapely==2.0.5 pyproj==3.6.1 rtree==1.0.1 branca==0.7.2
+
 Nota: Algunas librerías geoespaciales requieren dependencias del sistema que Conda maneja automáticamente.
 
 Uso del Proyecto
@@ -67,8 +65,6 @@ Procesamiento de Datos
 1. Calcular Valores Gatillo
 Ejecuta el script calcular_valores_gatillo.py para calcular los valores gatillo de las variables climáticas.
 
-bash
-Copiar código
 python scripts/calcular_valores_gatillo.py
 Entrada: dataset_modificado.csv
 Salida: gatillos_provincia_promedio_ultimos_2_anos.csv
