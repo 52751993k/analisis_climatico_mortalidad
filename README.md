@@ -12,10 +12,10 @@ Estructura del Proyecto
 │       (y los demás archivos asociados al shapefile)
 │
 ├── scripts/                # Carpeta para los scripts de Python
-│   ├── calcular_valores_gatillo.py
-│   ├── ajustar_valores_gatillo.py
-│   ├── verificar_versiones.py
-│   ├── utilidades.py
+│   ├── calcular_valores_gatillo.ipynb
+│   ├── ajustar_valores_gatillo.ipynb
+│   ├── verificar_versiones.ipynb
+│   ├── utilidades.ipynb
 │   └── (otros scripts de procesamiento)
 │
 ├── notebooks/              # Carpeta para los Jupyter Notebooks
@@ -42,7 +42,7 @@ Clonar el repositorio:
 git clone https://github.com/52751993k/analisis_climatico_mortalidad
 
 Navegar al directorio del proyecto:
-cd tu_proyecto
+cd analisis_climatico_mortalidad
 
 Crear un entorno virtual:
 conda create -n mi_entorno python=3.9
@@ -64,17 +64,17 @@ Uso del Proyecto
 Procesamiento de Datos
 1. Calcular Valores Gatillo
 Ejecuta el script calcular_valores_gatillo.py para calcular los valores gatillo de las variables climáticas.
-
 python scripts/calcular_valores_gatillo.py
 Entrada: dataset_modificado.csv
 Salida: gatillos_provincia_promedio_ultimos_2_anos.csv
+
 2. Ajustar Valores Gatillo
 Ejecuta el script ajustar_valores_gatillo.py para ajustar y validar los valores gatillo calculados.
-
-
 python scripts/ajustar_valores_gatillo.py
 Entrada: gatillos_provincia_promedio_ultimos_2_anos.csv
 Salida: nuevos_valores_gatillo.csv
+
+
 Visualizaciones Interactivas
 Los mapas interactivos se encuentran en la carpeta notebooks/ y requieren Jupyter Notebook o JupyterLab.
 
@@ -83,7 +83,6 @@ jupyter notebook
 
 2. Abrir los Notebooks de Interés
 Mapa Interactivo de Valores Gatillo: Abre mapa_interactivo_gatillos.ipynb para visualizar los valores gatillo por provincia.
-
 Mapa Interactivo de Temperaturas Extremas: Abre mapa_interactivo_temperaturas.ipynb para visualizar las temperaturas extremas y la mortalidad atribuible.
 
 Nota: Asegúrate de que los archivos de datos están en la carpeta data/ y que las rutas relativas en los notebooks son correctas.
