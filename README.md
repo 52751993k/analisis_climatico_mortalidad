@@ -41,7 +41,7 @@ Usando Conda (Recomendado)
 Clonar el repositorio:
 
 
-git clone https://github.com/tu_usuario/tu_proyecto.git
+git clone https://github.com/52751993k/analisis_climatico_mortalidad
 Navegar al directorio del proyecto:
 
 cd tu_proyecto
