@@ -13,6 +13,9 @@ from IPython.display import display
 
 # **1. Cargar los DataFrames necesarios**
 
+# Definir la ruta de la carpeta 'data'
+data_dir = os.path.join('data')
+
 # Cargar los valores gatillo desde un archivo CSV.
 # Asegúrate de que el archivo 'nuevos_valores_gatillo.csv' esté en la misma carpeta que este script o cuaderno.
 df_gatillo = pd.read_csv("nuevos_valores_gatillo.csv")
