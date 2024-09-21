@@ -15,6 +15,9 @@ from IPython.display import display
 
 # **1. Cargar los DataFrames necesarios**
 
+# Definir la ruta de la carpeta 'data'
+data_dir = os.path.join('data')
+
 # Cargar los datos de resultados ajustados y valores gatillo desde archivos CSV.
 # Asegúrate de que estos archivos estén en el mismo directorio que este script o cuaderno.
 df_resultados_ajustados = pd.read_csv("resultados_ajustados.csv")
